@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laboratorio 5</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:30px;
+}
+
+.contenedor{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+th{
+    background:#3498db;
+    color:white;
+    padding:12px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+tr:nth-child(even){
+    background:#f8f9fa;
+}
+
+tr:hover{
+    background:#eaf4ff;
+}
+
+input[type="text"],
+input[type="email"],
+select{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.opciones{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.footer{
+    margin-top:15px;
+    color:#666;
+    font-size:14px;
+}
+
+button{
+    margin-top:15px;
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#217dbb;
+}
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+
+<h2>📋 Registro de Alumnos</h2>
+
+<table>
+<tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Correo</th>
+    <th>Opciones</th>
+</tr>
+
+<tr>
+    <td>123456</td>
+    <td>Ricardo</td>
+    <td>Elizalde</td>
+    <td>ricardo@gmail.com</td>
+    <td>
+        <div class="opciones">
+            <label><input type="radio" name="g1"> 1ro</label>
+            <label><input type="radio" name="g1"> 2do</label>
+            <label><input type="radio" name="g1"> 3ro</label>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>789456</td>
+    <td>Arturo</td>
+    <td>Hernández</td>
+    <td>arturo@gmail.com</td>
+    <td>
+        <select>
+            <option>Seleccione una opción</option>
+            <option>Ajedrez</option>
+            <option>Fútbol</option>
+            <option>Maratón</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>123789</td>
+    <td>Jesed</td>
+    <td>Ricardo</td>
+    <td>jesed@gmail.com</td>
+    <td>
+        <label><input type="checkbox"> Ajedrez</label><br>
+        <label><input type="checkbox"> Fútbol</label><br>
+        <label><input type="checkbox"> Maratón</label>
+    </td>
+</tr>
+
+<tr>
+    <td>852369</td>
+    <td>Juan Pablo</td>
+    <td>Lagunes</td>
+    <td>jp@gmail.com</td>
+    <td>
+        <div class="opciones">
+            <label><input type="radio" name="g2"> 1ro</label>
+            <label><input type="radio" name="g2"> 2do</label>
+            <label><input type="radio" name="g2"> 3ro</label>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>741258</td>
+    <td>Claudia Abigail</td>
+    <td>Elizalde</td>
+    <td>claudia@gmail.com</td>
+    <td>
+        <select>
+            <option>Seleccione una opción</option>
+            <option>Ajedrez</option>
+            <option>Fútbol</option>
+            <option>Maratón</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="email"></td>
+    <td>
+        <label><input type="checkbox"> Ajedrez</label><br>
+        <label><input type="checkbox"> Fútbol</label><br>
+        <label><input type="checkbox"> Maratón</label>
+    </td>
+</tr>
+
+</table>
+
+<div class="footer">
+© Derechos Reservados Ricardo Elizalde
+</div>
+
+<button>Enviar Datos</button>
+
+</div>
+
+</body>
+</html>
