@@ -6,104 +6,87 @@
 <title>Laboratorio 5</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, sans-serif;
-}
 
 body{
-    background:#f4f6f9;
-    padding:30px;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    padding:20px;
 }
 
 .contenedor{
-    max-width:1200px;
+    width:95%;
     margin:auto;
     background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    padding:15px;
+    border:1px solid #ccc;
 }
 
 h2{
-    text-align:center;
-    margin-bottom:20px;
-    color:#2c3e50;
+    margin-bottom:15px;
 }
 
 table{
     width:100%;
     border-collapse:collapse;
-    overflow:hidden;
-    border-radius:10px;
+    background:white;
 }
 
 th{
-    background:#3498db;
-    color:white;
-    padding:12px;
+    background:#e9ecef;
+    padding:10px;
+    border:1px solid #ccc;
+    text-align:left;
 }
 
 td{
-    border:1px solid #ddd;
-    padding:10px;
-}
-
-tr:nth-child(even){
-    background:#f8f9fa;
+    padding:8px;
+    border:1px solid #ccc;
+    vertical-align:top;
 }
 
 tr:hover{
-    background:#eaf4ff;
+    background:#f8f9fa;
 }
 
 input[type="text"],
 input[type="email"],
 select{
-    width:100%;
-    padding:8px;
-    border:1px solid #ccc;
-    border-radius:6px;
-}
-
-.opciones{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-}
-
-.footer{
-    margin-top:15px;
-    color:#666;
-    font-size:14px;
+    width:95%;
+    padding:5px;
+    border:1px solid #bbb;
 }
 
 button{
-    margin-top:15px;
-    background:#3498db;
-    color:white;
+    margin-top:10px;
+    padding:8px 15px;
     border:none;
-    padding:12px 25px;
-    border-radius:8px;
+    background:#4a90e2;
+    color:white;
+    border-radius:4px;
     cursor:pointer;
-    font-size:16px;
-    transition:.3s;
 }
 
 button:hover{
-    background:#217dbb;
+    background:#357abd;
 }
+
+.footer{
+    margin-top:10px;
+    color:#555;
+    font-size:14px;
+}
+
 </style>
+
 </head>
 <body>
 
 <div class="contenedor">
 
-<h2>📋 Registro de Alumnos</h2>
+<h2>Laboratorio 5</h2>
 
 <table>
+
 <tr>
     <th>ID</th>
     <th>Nombre</th>
@@ -114,23 +97,21 @@ button:hover{
 
 <tr>
     <td>123456</td>
-    <td>Ricardo</td>
-    <td>Elizalde</td>
-    <td>ricardo@gmail.com</td>
+    <td>Hector</td>
+    <td>uribe</td>
+    <td>hectorand3005@gmail.com</td>
     <td>
-        <div class="opciones">
-            <label><input type="radio" name="g1"> 1ro</label>
-            <label><input type="radio" name="g1"> 2do</label>
-            <label><input type="radio" name="g1"> 3ro</label>
-        </div>
+        <label><input type="radio" name="grupo1"> 1ro</label>
+        <label><input type="radio" name="grupo1"> 2do</label>
+        <label><input type="radio" name="grupo1"> 3ro</label>
     </td>
 </tr>
 
 <tr>
     <td>789456</td>
-    <td>Arturo</td>
+    <td>Hector Uribe</td>
     <td>Hernández</td>
-    <td>arturo@gmail.com</td>
+    <td>hectorand3005@gmail.com</td>
     <td>
         <select>
             <option>Seleccione una opción</option>
@@ -147,9 +128,9 @@ button:hover{
     <td>Ricardo</td>
     <td>jesed@gmail.com</td>
     <td>
-        <label><input type="checkbox"> Ajedrez</label><br>
-        <label><input type="checkbox"> Fútbol</label><br>
-        <label><input type="checkbox"> Maratón</label>
+        Ajedrez <input type="checkbox"><br>
+        Fútbol <input type="checkbox"><br>
+        Maratón <input type="checkbox">
     </td>
 </tr>
 
@@ -159,11 +140,9 @@ button:hover{
     <td>Lagunes</td>
     <td>jp@gmail.com</td>
     <td>
-        <div class="opciones">
-            <label><input type="radio" name="g2"> 1ro</label>
-            <label><input type="radio" name="g2"> 2do</label>
-            <label><input type="radio" name="g2"> 3ro</label>
-        </div>
+        <label><input type="radio" name="grupo2"> 1ro</label>
+        <label><input type="radio" name="grupo2"> 2do</label>
+        <label><input type="radio" name="grupo2"> 3ro</label>
     </td>
 </tr>
 
@@ -188,19 +167,19 @@ button:hover{
     <td><input type="text"></td>
     <td><input type="email"></td>
     <td>
-        <label><input type="checkbox"> Ajedrez</label><br>
-        <label><input type="checkbox"> Fútbol</label><br>
-        <label><input type="checkbox"> Maratón</label>
+        Ajedrez <input type="checkbox"><br>
+        Fútbol <input type="checkbox"><br>
+        Maratón <input type="checkbox">
     </td>
 </tr>
 
 </table>
 
 <div class="footer">
-© Derechos Reservados Ricardo Elizalde
+    (r) HECTOR ANDRES URIBE GARCIA 
 </div>
 
-<button>Enviar Datos</button>
+<button type="submit">Enviar Datos</button>
 
 </div>
 
